@@ -1,15 +1,10 @@
 import React from 'react'
-import Image from 'next/image'
+import { LoaderCircle } from 'lucide-react';
 
 const Loader = () => {
   return (
-    <div className='flex-center h-screen w-full '>
-        <Image 
-            src='/icon/loading-circle.svg'
-            alt='loading'
-            width={50}
-            height={50}
-        />   
+    <div className='flex-center h-screen w-full text-white'>
+        <LoaderCircle width={50} height={50} />  
     </div>
   )
 }
